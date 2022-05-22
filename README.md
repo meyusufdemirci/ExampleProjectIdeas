@@ -25,6 +25,7 @@ Swift with UIKit. No need to use SwiftUI for now.
 **Responsive Design**  
 Use only one storyboard. Make all design processes in a single storyboard. No need to create separated storyboards or xib files.  
 Fill the buttons on the screen by using horizontal and vertical stack views.  
+Use constraints to make a dynamic sized stack view.
 You are free to align the buttons as you wish.
   
 **Keywords**
