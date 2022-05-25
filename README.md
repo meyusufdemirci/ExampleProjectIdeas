@@ -2,6 +2,8 @@ Are you struggling to find a project to make progress in your iOS career? Here i
 
 Please focus on and learn the keywords deeply in the project descriptions!
 
+If you indent to get the best result, follow the projects by order. Do not jump from the first project to the fifth one.
+
 # Projects
 
 - [Calculator](#calculator)
