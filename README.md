@@ -30,6 +30,9 @@ Use only one storyboard. Make all design processes in a single storyboard. No ne
 Fill the buttons on the screen by using horizontal and vertical stack views.  
 Use constraints to make a dynamic sized stack view.
 You are free to align the buttons as you wish.
+
+#### Logic
+Insert outlets and actions of the buttons to the controller. Make the calculation by the operator. Use functions to make different calculations.
   
 #### Keywords
 - MVC
@@ -44,11 +47,12 @@ By tapping the plus(create) button, the create to-do screen opens. Users can def
 In case the user taps on one of the to-dos, the detail page shows, and the user can edit the to-do.
 
 #### Goals
-- Understand MVVM
-- Use table view
+- Understand MVVM by separating logic between controller and view model
+- Learn to implement table view
 - Integrate third-party library
-- Build UI programmatically
-- Use model(such as ToDo)
+- Build UI programmatically in controller
+- Use model(such as ToDo) with Codable
+- Use UserDefaults to fetch and save data locally
 
 #### Architecture
 Use simple MVVM. No need to use protocols for now. Do not forget that **you must not import UIKit in the view model**.
@@ -61,8 +65,13 @@ Integrate [SnapKit](https://github.com/SnapKit/SnapKit) via **SPM** and build UI
 Use table view in the list screen.  
 You are free to build UI as you wish.
 
+#### Logic
+Implement Codable to your To-Do model and store to-dos as an array in local by using UserDefaults.
+
 #### Keywords
 - MVVM
 - Table view
+- Codable
 - SPM
 - SnapKit
+- UserDefaults
