@@ -16,7 +16,7 @@ Also, a label to show the result of the process.
   
 #### Goals
 - Get familiar with communication between the controller and its view
-- Alig UI components regularly
+- Align UI components regularly
 - Understand the logic mechanism in the controller
 - Make a meaningful, tidy folder structure
   
