@@ -8,6 +8,7 @@ If you indent to get the best result, follow the projects by order. Do not jump 
 - [Calculator](#calculator)
 - [To-Do List](#to-do-list)
 - [Movies](#movies)
+- [News](#news)
 
 ## Calculator
 Build a simple single-page calculator.  
@@ -122,10 +123,69 @@ Swift with UIKit
 - SPM
 - SnapKit
 - Kingfisher
-- Network Layer
+- Network layer
 - URLSession
 - Singleton
 - UserDefaults
+
+#### Note
+This is one of the most essential projects since most of the companies ask this kind of case/challenge to understand your technical knowledge. Be more serious on this project than others!
+
+## News
+Build a four-paged movie list app.  
+It will have four screens. The first appearing screen is the splash screen. Ask push notification permission at splash.  
+The second screen is the list that includes the news from now to the past. Fetch the data from [Google News API](https://newsapi.org/s/google-news-api). I can able to refresh the data by the pull to refresh.  
+The list screen must have a search and filter which can work at the same time. I can able to search by text and filter by date range such as from 01/01/2022 to 30/01/2022. **The search must work with the API, not locale**.  
+By tapping one of the news, the news detail screen must appear. I can able to add the news to the favorites via a button.  
+The last screen is the favorites that have the favorite news. No need filter and search here, only a list. Store the favorites with their news title and source URL. Open Safari when a favorited news is tapped.  
+Use TabBarController to store the list and favorites screens.
+
+#### Goals
+- Learn asking permission
+- Learn how to use closures
+- Understand MVVM by separating logic between controller and view model
+- Integrate third-party library
+- Build UI programmatically in controller
+- Use UserDefaults
+- Integrate generic network layer by Alamofire
+- Use model(such as News) with Codable
+- Understand localization
+- Write unit test
+
+#### Architecture
+- Use simple MVVM. Do not forget that **you must not import UIKit in the view model**
+- Use closures to communicate between controller and view model
+- Build a generic network layer combined with Alamofire. Here is an [article](https://demirciy.medium.com/generic-network-layer-in-ios-development-2bffff780832) about it
+- Use protocols to pass the data from the network layer to the screen
+
+#### Language / Framework
+Swift with UIKit
+
+#### Responsive Design
+- Integrate SnapKit to build UI programmatically. No need to use any Storyboard od xib files
+- Use table view in the list screen
+- Download news images via [Kingfisher](https://github.com/onevcat/Kingfisher)
+
+#### Logic
+- The push notification permission must be async in the splash screen. The screen waits for the user's response to show the next screen
+- The search and filter mechanism in the list screen must work without blocking UI
+- Store favorited news in the UserDefaults as an array
+- Localize texts in at least two languages
+- At least the view models and network layer must be covered by the unit test
+
+#### Keywords
+- MVVM
+- Table view
+- Codable
+- SPM
+- SnapKit
+- Kingfisher
+- Generic network layer
+- Alamofire
+- UserDefaults
+- Localization
+- Unit test
+- Closure
 
 #### Note
 This is one of the most essential projects since most of the companies ask this kind of case/challenge to understand your technical knowledge. Be more serious on this project than others!
