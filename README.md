@@ -132,7 +132,7 @@ Swift with UIKit
 This is one of the most essential projects since most of the companies ask this kind of case/challenge to understand your technical knowledge. Be more serious on this project than others!
 
 ## News
-Build a four-paged movie list app.  
+Build a four-paged news list app.  
 It will have four screens. The first appearing screen is the splash screen. Ask push notification permission at splash.  
 The second screen is the list that includes the news from now to the past. Fetch the data from [Google News API](https://newsapi.org/s/google-news-api). I can able to refresh the data by the pull to refresh.  
 The list screen must have a search and filter which can work at the same time. I can able to search by text and filter by date range such as from 01/01/2022 to 30/01/2022. **The search must work with the API, not locale**.  
